@@ -1,0 +1,196 @@
+/* Navbar: */
+nav{
+    height: 150px;
+    background-image: url(assets/images/navbar3.jpg);
+    background-size: 100%;
+    background-position-y: -30px;
+    margin-bottom: 5px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* the links for every section */
+nav a{
+    background-color: white;
+    opacity: 85%;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding: 10px;
+    font-size: 100%;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+/* the search input */
+nav > #searchCoin{
+    margin-left: auto;
+    width: 150px;
+    margin-right: 10px;
+    opacity: 85%;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+nav  #filterBox{
+    opacity: 85%;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+nav > label {
+    background-color: white;
+    opacity: 85%;
+    margin: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    overflow: auto;
+    font-size: large;
+    font-weight: bolder;
+}
+
+/* Home Section: */
+#homeSection{
+    width: 100%;
+    text-align: center;
+    padding-left: 30px;
+}
+
+/* every card */
+.card {
+    border: 1px solid rgb(124, 125, 125);
+    background-color:beige;
+    display: inline-block;
+    padding: 10px;
+    overflow: auto;
+}
+
+hr{
+    margin-top: -5px;
+}
+
+.card .symbol {
+    font-size: xx-large;
+}
+
+/* the check box */
+.mainCheckbox{
+    font-size: large;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.card img {
+    margin: 10px;
+    display: inline-block;
+    width: 40px;
+    margin-top: -5px;
+} 
+
+.card .name{
+    font-size: large;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card > .btn{
+    width: 35%;
+    margin-bottom: 20px;
+}
+
+/* the "more info" data */
+.moreInfoSpan {
+    display: none;
+}
+
+/* the loading for "more info */
+.loading {
+    border: 16px solid #f3f3f3; /* Light grey */    border-top: 16px solid #3498db; /* Blue */  border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+#chartContainer {
+    height: 500px;
+    width: 100%;
+}
+
+/* Modal: */
+.modal-body > h5{
+    text-align: center;
+}
+
+.electedCoinsModal {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+}
+
+.electedCoinModal{
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Report Section: */
+/* the error message */
+.ErrorMessage {
+    text-align: center;
+    margin-top: 50px;
+    font-size: xx-large;
+}
+
+/* About Section:  */
+.aboutBox {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.aboutBox h3 {
+    text-align: center;
+    grid-column: span 5;
+    margin-bottom: 20px;
+}
+
+.aboutData{
+    grid-column: span 4;
+}
+.aboutData p {
+    text-align: center
+}
+
+.aboutData p, .aboutData div {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px;
+    background-color: aliceblue;
+}
+
+.aboutData div > span {
+    font-weight: bold;
+}
+
+.aboutData div > li {
+    padding-left: 30px;
+}
+
+.aboutData p:first-child{
+    margin-top: 0;
+}
+
+.aboutBox img {
+    width: 400px;
+    height: 95%;
+    border-radius: 50px;
+}

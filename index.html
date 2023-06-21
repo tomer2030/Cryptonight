@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptonight</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.6.0.js"></script>
+    <script src="main.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+</head>
+<body>
+    <!-- the NavBar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <a href="javascript:void(0)" data-section="homeSection">Home</a>
+    
+        <a href="javascript:void(0)" data-section="reportSection" class="reportLink">Live Report</a>
+    
+        <a href="javascript:void(0)" data-section="aboutSection">About</a>
+        <input id="searchCoin" placeholder="Search Coin" />
+        <label>
+            filter the elected coins
+            <input id="filterBox" type="checkbox" placeholder="Search Coin" />
+        </label>
+    </nav>
+   
+    <!-- the Data Sections -->
+    <section id="homeSection" class="row"></section>
+    <section id="reportSection"></section>
+    <section id="aboutSection"></section>
+
+    <!-- the Modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">You Must Choose Only 5 Coins</h3>
+                </div>
+                <div class="modal-body">
+                    <h5 class="">which coin do you want replace?</h5>
+                    <div class="electedCoinsModal"></div>
+                </div>
+                <div class="modal-footer">
+                    <button id="cancelButton" type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
